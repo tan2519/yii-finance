@@ -64,6 +64,18 @@ class SiteController extends Controller
             ],
         ];
     }
+    public function  actionUrl(){
+        $fname='rungsun';
+        $lname='tiawsakul';
+        $age='40';
+        return $this->render('url',[
+            'fname'=>$fname,
+            'lname'=>$lname,
+            'age'=>$age
+               ]);
+    }
+    
+
 
     /**
      * Displays homepage.
